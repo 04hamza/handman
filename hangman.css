@@ -1,0 +1,90 @@
+*{
+    box-sizing: border-box;
+}
+.title{
+    margin-top: 50px;
+    color: rgb(112, 26, 192);
+    font-size: 50px;
+    text-align: center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-transform: capitalize;
+    font-weight: bolder;
+}
+.table{
+    background-color: chartreuse;
+    width: 890px;
+    margin:20px auto;
+}
+.score,.fails{
+  height: 30px;
+  display: flex;
+  width: 810px;
+  line-height: 30px;
+  justify-content: end;
+}
+.score span,.fails span{
+    background-color: white;
+    width: 100px;
+    margin-top: 1px;
+    margin-left: 2px;
+    text-align: center;
+}
+
+.word,.word-fails{
+    background-color: white;
+    width: 570px;
+    margin-top: 1px;
+    margin-left: 3px;
+}
+.word span{
+    width: 20px;
+    height: 20px;
+    display: inline-block;
+    margin-left: 3px;
+    margin-top: 7px;
+    border-bottom: 1.5px solid black;
+    text-align: center;
+    line-height: 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+body{
+    background-color: rgb(12, 222, 152);
+}
+.go{
+    height: 55px;
+    width: 55px;
+    float: right;
+    position: relative;
+    transform: translate(-10px,-25px);
+    text-align: center;
+    line-height: 55px;
+    text-transform: uppercase;
+    border: 1px solid black;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.letters{
+    display: flex;
+    flex-wrap: wrap;
+    width: 750px;
+    margin-top: 5px;
+    margin-left: 10px;
+
+}
+.letters span{
+    height: 40px;
+    width: 50px;
+    text-transform: uppercase;
+    text-align: center;
+    line-height: 40px;
+    color: black;
+    background-color: rgb(238, 241, 241);
+    border: 1px solid black;
+    border-radius: 2px;
+    margin: 2px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.letters .clicked{
+    background-color: rgb(106, 108, 108);
+    pointer-events: none;
+    color: antiquewhite;
+}
